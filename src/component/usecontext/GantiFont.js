@@ -2,7 +2,7 @@ import { useContext, createContext, useState } from "react";
 
 const Font = {
   primary: {
-    value: "sans-serif",
+    value: "serif",
   },
   secondary: {
     value: "monospace",
