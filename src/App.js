@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
+import "./App.css";
+import LoginForm from "./component/usestate/LoginForm";
+import InfoKelompok from "./component/useeffect/InfoKelompok";
+import GantiFont from "./component/usecontext/GantiFont";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <BrowserRouter>
+      <header>
+        <nav>
+          <Link className="text" to="/">
+            useState
+          </Link>
+          <Link className="text navtext2" to="/useeffect">
+            useEffect
+          </Link>
+          <Link className="text" to="/usecontext">
+            useContext
+          </Link>
+        </nav>
       </header>
-    </div>
+      <Switch>
+        <Route path="/" exact component={LoginForm} />
+        <Route path="/useeffect" component={InfoKelompok} />
+        <Route path="/usecontext" component={GantiFont} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
