@@ -28,7 +28,10 @@ export default function InfoKelompok() {
           {data.map((item) => (
           <div class="mt-4">
             <div>
-              <p class="mt-6 px-8 text-gray-500">
+              <p 
+                class="mt-6 px-8 text-gray-500"
+                style={{ margin: 20, fontSize: 19, color: "slateblue", fontWeight: "bold" }}
+              >
                 <br/><br/>{item.nama}<br/>
                 {item.nim}<br/>
               </p>
