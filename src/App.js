@@ -11,13 +11,13 @@ function App() {
       <header>
         <nav>
           <Link className="text" to="/">
-            useState
+            Login
           </Link>
           <Link className="text navtext2" to="/useeffect">
-            useEffect
+            Info Kelompok
           </Link>
           <Link className="text" to="/usecontext">
-            useContext
+            Ganti Font
           </Link>
         </nav>
       </header>
