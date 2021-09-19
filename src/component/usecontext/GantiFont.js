@@ -26,7 +26,7 @@ export default function GantiFont() {
             )
           }
         >
-          change
+          Change
         </button>
       </div>
     </FontContext.Provider>
@@ -40,7 +40,7 @@ function Text(props) {
       className="titleContext"
       style={{ fontSize: 50, fontFamily: font.value }}
     >
-      Halo gais
+      Sheeeeeeeeeeesh
     </p>
   );
 }
